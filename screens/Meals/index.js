@@ -3,8 +3,6 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 
 import { CATEGORIES } from '../../data/dummy-data';
 
-import Colors from '../../constants/colors';
-
 const Meals = (props) => {
   const catId = props.navigation.getParam('categoryId');
 
@@ -33,10 +31,6 @@ Meals.navigationOptions = (navigationData) => {
 
   return {
     headerTitle: selectedCategory.title,
-    headerStyle: {
-      backgroundColor: Colors.primaryColor,
-    },
-    headerTintColor: 'white',
   };
 };
 
