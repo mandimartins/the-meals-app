@@ -12,11 +12,10 @@ const fetchFonts = () => {
     'open-sans-bold': require('./assets/Fonts/OpenSans-Bold.ttf'),
   });
 };
+enableScreens();
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
-
-  enableScreens();
 
   if (!fontLoaded) {
     return (
@@ -28,9 +27,8 @@ export default function App() {
       />
     );
   } else {
+    return <MealsNavigator />;
   }
-
-  return <MealsNavigator />;
 }
 
 const styles = StyleSheet.create({
