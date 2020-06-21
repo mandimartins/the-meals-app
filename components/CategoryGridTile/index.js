@@ -8,8 +8,6 @@ import {
   Platform,
 } from 'react-native';
 
-// import { Container } from './styles';
-
 const CategoryGridTile = ({ title, color, onSelect }) => {
   let TouchableCmp = TouchableOpacity;
 
